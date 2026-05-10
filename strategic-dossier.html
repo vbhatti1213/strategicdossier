@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategic Operations Dossier — Vaishally Bhatti</title>
+<meta name="description" content="Fractional operator portfolio — Vaishally Bhatti. Insights, brand, GTM, and communications systems for complex organizations.">
+<meta property="og:title" content="Vaishally Bhatti — Fractional Operator">
+<meta property="og:description" content="I take on work that stalls between strategy and execution — and I ship it.">
+<meta property="og:url" content="https://vbhatti1213.github.io/strategic-dossier.html">
+<meta name="author" content="Vaishally Bhatti">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF7F2;
+    --ink: #1C1A17;
+    --ink-soft: #4A4540;
+    --ink-muted: #8A837A;
+    --slate: #2C3E50;
+    --slate-soft: #EBF0F5;
+    --gold: #B8892A;
+    --gold-soft: #F5EDD8;
+    --border: rgba(26,23,20,0.1);
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); background: var(--cream); color: var(--ink); line-height: 1.6; }
+
+  /* NAV */
+  nav { background: var(--ink); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+  .nav-name { font-family: var(--serif); font-size: 1rem; color: var(--cream); letter-spacing: -0.01em; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.8rem; font-weight: 500; color: rgba(250,247,242,0.55); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--cream); }
+
+  /* HERO */
+  .hero { background: var(--ink); padding: 5rem 2rem 4rem; border-bottom: 3px solid var(--gold); }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .hero-eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; letter-spacing: -0.02em; color: var(--cream); margin-bottom: 1.5rem; max-width: 720px; }
+  .hero h1 em { font-style: italic; color: #C8A86A; }
+  .hero-sub { font-size: 1rem; color: rgba(250,247,242,0.65); max-width: 620px; line-height: 1.8; margin-bottom: 2.5rem; }
+  .hero-proof { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3rem; }
+  .proof-pill { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; color: var(--ink); background: var(--gold); padding: 0.3rem 0.875rem; border-radius: 2px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; border-top: 1px solid rgba(250,247,242,0.1); padding-top: 2.5rem; }
+  .stat-num { font-family: var(--serif); font-size: 2rem; color: var(--cream); line-height: 1; margin-bottom: 0.3rem; }
+  .stat-label { font-size: 0.75rem; color: rgba(250,247,242,0.45); font-weight: 500; letter-spacing: 0.03em; line-height: 1.4; }
+
+  /* SECTIONS */
+  .section { max-width: 860px; margin: 0 auto; padding: 4rem 2rem; }
+  .section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.75rem; }
+  .section-title { font-family: var(--serif); font-size: 1.6rem; color: var(--ink); margin-bottom: 2.5rem; letter-spacing: -0.01em; }
+
+  /* CAPABILITY TILES */
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .tile { background: #fff; border: 1px solid var(--border); border-radius: 3px; padding: 2rem; transition: box-shadow 0.2s; }
+  .tile:hover { box-shadow: 0 6px 24px rgba(26,23,20,0.07); }
+  .tile-num { font-family: var(--serif); font-size: 3rem; color: var(--gold); opacity: 0.2; line-height: 1; margin-bottom: 1rem; }
+  .tile-category { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .tile-title { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); line-height: 1.3; margin-bottom: 0.75rem; }
+  .tile-frame { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.65; margin-bottom: 1.25rem; font-style: italic; border-left: 2px solid var(--gold); padding-left: 0.875rem; }
+  .tile-outcomes { display: flex; flex-direction: column; gap: 0.4rem; }
+  .tile-outcome { font-size: 0.82rem; color: var(--ink-soft); display: flex; align-items: flex-start; gap: 0.5rem; line-height: 1.5; }
+  .tile-outcome::before { content: '→'; color: var(--gold); font-weight: 600; flex-shrink: 0; margin-top: 1px; }
+
+  /* CALLOUT STRIP */
+  .callout-strip { background: var(--slate); padding: 2.5rem 2rem; }
+  .callout-inner { max-width: 860px; margin: 0 auto; }
+  .callout-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .callout-text { font-size: 0.95rem; color: rgba(250,247,242,0.8); line-height: 1.75; max-width: 680px; margin-bottom: 1.5rem; }
+  .callout-services { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .service-tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; color: var(--slate); background: var(--gold); padding: 0.25rem 0.75rem; border-radius: 2px; }
+
+  /* PROJECT PAGES */
+  .project-section { background: #fff; border-top: 1px solid var(--border); padding: 4rem 2rem; }
+  .project-section.alt { background: var(--cream); }
+  .project-inner { max-width: 860px; margin: 0 auto; }
+  .project-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+  .project-category { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .project-title { font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2.2rem); color: var(--ink); line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 1rem; }
+  .project-framing { font-size: 1rem; color: var(--ink-soft); line-height: 1.75; max-width: 680px; font-style: italic; }
+  .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+  .project-block { background: var(--cream); border: 1px solid var(--border); border-radius: 3px; padding: 1.5rem; }
+  .project-block-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .project-block p { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.7; }
+  .project-outcomes { background: var(--ink); border-radius: 3px; padding: 1.75rem 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; }
+  .outcome-num { font-family: var(--serif); font-size: 1.75rem; color: var(--cream); line-height: 1; margin-bottom: 0.3rem; }
+  .outcome-desc { font-size: 0.78rem; color: rgba(250,247,242,0.5); line-height: 1.5; font-weight: 500; }
+
+  /* CONTEXT STRIP */
+  .context-strip { background: var(--gold-soft); border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); padding: 2rem; }
+  .context-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .context-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  .context-text { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.7; flex: 1; min-width: 260px; }
+
+  /* CONTACT */
+  .contact-section { background: var(--ink); padding: 3.5rem 2rem; text-align: center; }
+  .contact-inner { max-width: 560px; margin: 0 auto; }
+  .contact-section h2 { font-family: var(--serif); font-size: 1.75rem; color: var(--cream); margin-bottom: 0.75rem; font-style: italic; }
+  .contact-section p { font-size: 0.88rem; color: rgba(250,247,242,0.5); margin-bottom: 2rem; line-height: 1.7; }
+  .contact-row { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+  .contact-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .contact-item:hover { color: var(--gold); }
+  .contact-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+  footer { max-width: 860px; margin: 0 auto; padding: 1.5rem 2rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--ink-muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+
+  @media (max-width: 640px) {
+    .tiles { grid-template-columns: 1fr; }
+    .project-grid { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .hero { padding: 3rem 1.25rem 2.5rem; }
+    .section { padding: 2.5rem 1.25rem; }
+    .project-section { padding: 2.5rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">Vaishally Bhatti</div>
+  <ul class="nav-links">
+    <li><a href="#capabilities">Capabilities</a></li>
+    <li><a href="#work">Selected Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Fractional Operator · Insights · Brand · GTM · Communications Systems</p>
+    <h1>I take on work that stalls between <em>strategy and execution</em> — and I ship it.</h1>
+    <p class="hero-sub">12 years at Tim Hortons Corporate. 8 years in financial services. I lead with customer insight, build layered communications systems, and move from ambiguity to execution fast. Most organizations skip the insight work. I start there.</p>
+    <div class="hero-proof">
+      <span class="proof-pill">150K+ clients served</span>
+      <span class="proof-pill">Insight-led pricing & GTM</span>
+      <span class="proof-pill">48-hour rapid deployment</span>
+      <span class="proof-pill">Comms systems that scale</span>
+      <span class="proof-pill">Start-ups · QSR · Nonprofit</span>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">15+</div><div class="stat-label">Years cross-sector operations</div></div>
+      <div><div class="stat-num">150K+</div><div class="stat-label">Clients served across complex service systems</div></div>
+      <div><div class="stat-num">60+</div><div class="stat-label">Locations coordinated in 72-hr transition</div></div>
+      <div><div class="stat-num">$40M</div><div class="stat-label">Program-driven loan book built</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="capabilities">
+  <p class="section-label">Core Capabilities</p>
+  <h2 class="section-title">What I bring — and how fast I bring it</h2>
+  <div class="tiles">
+
+    <div class="tile">
+      <div class="tile-num">01</div>
+      <div class="tile-category">Messaging & Narrative Systems</div>
+      <div class="tile-title">Communications Architecture</div>
+      <div class="tile-frame">Unified communication systems across multi-stakeholder environments — executive voice frameworks to public-facing narrative. Built to run without dependency on a single person.</div>
+      <div class="tile-outcomes">
+        <div class="tile-outcome">CEO and board voice architecture for province-wide nonprofit</div>
+        <div class="tile-outcome">Narrative repositioning across 150K+ client base during $50M capital raise</div>
+        <div class="tile-outcome">Always-on communications engine replacing reactive campaign structure</div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile-num">02</div>
+      <div class="tile-category">Rapid Deployment & Fractional Operations</div>
+      <div class="tile-title">48-Hour Operator</div>
+      <div class="tile-frame">I jump into the messy. Within 48 hours I can assess what's broken, identify what's missing, and move — across brand, GTM, insights, project management, and copy. No ramp time. No hand-holding.</div>
+      <div class="tile-outcomes">
+        <div class="tile-outcome">Identified 150% pricing uplift on Village Membership — 24 hours before launch</div>
+        <div class="tile-outcome">72-hour essential services transition across 60+ locations during COVID-19</div>
+        <div class="tile-outcome">MoneyUp MVP — concept to launch with cross-functional team in compressed timeline</div>
+        <div class="tile-outcome">Available immediately for fractional, contract, and embedded operator engagements</div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile-num">03</div>
+      <div class="tile-category">Service System Communication Design</div>
+      <div class="tile-title">Diagnostic & System Design</div>
+      <div class="tile-frame">Diagnosing broken communications infrastructure. Building systems that are scalable, documented, and transition-ready — new staff execute on day one.</div>
+      <div class="tile-outcomes">
+        <div class="tile-outcome">Revenue-generating communications engine built for Alberta nonprofit chapter</div>
+        <div class="tile-outcome">A/B testing framework feeding continuous tone refinement back into the system</div>
+        <div class="tile-outcome">Self-serve copy infrastructure enabling new staff to execute on day one</div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile-num">04</div>
+      <div class="tile-category">Insight-Led Growth & Pricing Strategy</div>
+      <div class="tile-title">Research, Pricing & GTM</div>
+      <div class="tile-frame">Customer insight before any initiative. Van Westendorp pricing analysis, behavioral segmentation, VOC research — translated into positioning, pricing, and go-to-market decisions that compound.</div>
+      <div class="tile-outcomes">
+        <div class="tile-outcome">150% pricing uplift identified via Van Westendorp analysis — Village Membership</div>
+        <div class="tile-outcome">7-persona behavioral segmentation framework — 16-point recovery lift</div>
+        <div class="tile-outcome">0 to 4,000 Village Members — GTM strategy through to launch</div>
+        <div class="tile-outcome">Product marketing leadership — MoneyUp, 18K downloads, 4.8★ rating</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="callout-strip">
+  <div class="callout-inner">
+    <div class="callout-label">How I engage</div>
+    <div class="callout-text">I work fractionally, on contract, or as an embedded operator. Give me 48 hours inside your organization and I can tell you what's stalling, what's missing, and what needs to move first. I don't need a full brief to start — I need access and trust to ask hard questions.</div>
+    <div class="callout-services">
+      <span class="service-tag">Project Management</span>
+      <span class="service-tag">Brand Consulting</span>
+      <span class="service-tag">Product Marketing</span>
+      <span class="service-tag">Pricing Strategy</span>
+      <span class="service-tag">Research & Insights</span>
+      <span class="service-tag">Marketing Strategy</span>
+      <span class="service-tag">Copywriting</span>
+      <span class="service-tag">GTM Execution</span>
+    </div>
+  </div>
+</div>
+
+<div id="work">
+
+  <div class="project-section">
+    <div class="project-inner">
+      <div class="project-header">
+        <p class="project-category">Service System Communication Design</p>
+        <h2 class="project-title">Building the Revenue Engine —<br>Not-for-Profit, Alberta Chapter</h2>
+        <p class="project-framing">Communications activity without a communications system. Multiple teams, no unified strategy — effort spent, revenue not compounding.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-block">
+          <p class="project-block-label">Stakeholder Environment</p>
+          <p>Provincial nonprofit chapter. Fundraising leadership, program staff, board members, and volunteer walkers — parallel teams, no unified voice or channel strategy.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">System Diagnosis</p>
+          <p>No self-serve copy infrastructure. No channel differentiation. No always-on engine between campaigns. All audiences — legacy donors, younger caregivers, diverse communities — addressed in a single institutional voice.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Approach</p>
+          <p>Built a six-stage fundraising engine — awareness through gratitude — with channel-specific execution. Designed an always-on calendar to hold audience between campaign windows. Developed CEO Voice Card and Board Voice Guides.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Decision Points</p>
+          <p>Introduced A/B testing to pull the brand toward younger and culturally diverse audiences — winning tone fed back into the always-on strategy. Competitive benchmarking sharpened category positioning rather than competing broadly on caregiver identity.</p>
+        </div>
+      </div>
+      <div class="project-outcomes">
+        <div class="outcome-item"><div class="outcome-num">1</div><div class="outcome-desc">Unified communications layer — every content producer has a defined lane, tone, and calendar</div></div>
+        <div class="outcome-item"><div class="outcome-num">5</div><div class="outcome-desc">Key channels optimized by tone and audience behaviour</div></div>
+        <div class="outcome-item"><div class="outcome-num">6</div><div class="outcome-desc">Fundraising journey stages — awareness to gratitude, channel-specific execution</div></div>
+        <div class="outcome-item"><div class="outcome-num">4</div><div class="outcome-desc">Main anchor points built — campaign engine, always-on, voice architecture, competitive positioning</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section alt">
+    <div class="project-inner">
+      <div class="project-header">
+        <p class="project-category">Messaging & Narrative Systems</p>
+        <h2 class="project-title">Narrative Repositioning at Scale —<br>Cashco Financial</h2>
+        <p class="project-framing">An organization without a brand operating in a category defined by stigma. The challenge was not building a campaign — it was building the architecture that would let every touchpoint carry the same message.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-block">
+          <p class="project-block-label">Stakeholder Environment</p>
+          <p>60+ branches across Alberta. Frontline staff navigating financial shame daily. Executive team mid-$50M capital raise. Board requiring governance-level narrative clarity. 150K+ clients — many newcomers, first-generation Canadians, and underbanked individuals.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">System Diagnosis</p>
+          <p>No brand infrastructure. Communications reactive and inconsistent across 60+ locations. Transactional language reinforcing the stigma the organization needed to dismantle. No internal framework for staff to address financial shame constructively.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Approach</p>
+          <p>Built full narrative architecture anchored in a BHAG: <em>End Financial Exclusion</em> — with purpose defined as putting one million Canadians on a pathway to financial health. Designed a From/To language framework across credit, debt, and financial behaviour. Built an Empathy Framework for frontline staff. Launched financial literacy programs including a customized Wealthing Like Rabbits and The Bunny's Talk Money Book (ages 5–8).</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Decision Points</p>
+          <p>Repositioned core product from "payday loan" to "wage advance" — a language shift with measurable behaviour implications. Replaced the 50-30-20 budget with an 80-10-10 model built for real financial starting points. Built a credit model decoupled from income correlation.</p>
+        </div>
+      </div>
+      <div class="project-outcomes">
+        <div class="outcome-item"><div class="outcome-num">90%+</div><div class="outcome-desc">Client sentiment scores following narrative repositioning</div></div>
+        <div class="outcome-item"><div class="outcome-num">$40M</div><div class="outcome-desc">Loan book built during repositioning tenure</div></div>
+        <div class="outcome-item"><div class="outcome-num">150K+</div><div class="outcome-desc">Clients served under unified brand and literacy framework</div></div>
+        <div class="outcome-item"><div class="outcome-num">★★★★</div><div class="outcome-desc">Best in class recognition — Penguin Awards for innovation in financial services</div></div>
+        <div class="outcome-item"><div class="outcome-num">$100</div><div class="outcome-desc">Guaranteed loan access introduced during COVID uncertainty — maintained client trust under crisis</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="project-inner">
+      <div class="project-header">
+        <p class="project-category">Community & Partnership Development</p>
+        <h2 class="project-title">Province-Wide Stakeholder Network —<br>Alberta First Responders Association</h2>
+        <p class="project-framing">A mission-critical organization with no marketing infrastructure, serving a community culturally resistant to help-seeking. The work required building a stakeholder ecosystem — not a campaign — that could normalize mental health conversations across an entire provincial sector.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-block">
+          <p class="project-block-label">Stakeholder Environment</p>
+          <p>Alberta-wide — police, fire, EMS, corrections. Multiple municipalities, health authorities, and sport organizations. A culture that prizes stoicism and resists institutional messaging. Volunteer CMO — zero budget, full mandate.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">System Diagnosis</p>
+          <p>No brand, no partnerships, no system. General awareness campaigns failing to penetrate a community that distrusts institutional messaging. Peer voice was the only credible channel — with no infrastructure to activate it.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Approach</p>
+          <p>Built brand and communications strategy from near-zero. Anchored positioning on psychological fitness as professional standard — not crisis intervention. Designed peer-first communications: every campaign led with first responder voices, not clinicians or executives. Operational vocabulary throughout — strength framing, not vulnerability framing. Developed a provincial Crisis Communications Playbook.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Decision Points</p>
+          <p>Flipped the standard mental health communications frame — leading with reframing before any ask. Tone shift: "It's okay to ask for help" → "Seeking support keeps you in the job." Built the province-wide gala as a stakeholder alignment and fundraising vehicle — scaled from 75 to 300 tickets sold in 4 weeks.</p>
+        </div>
+      </div>
+      <div class="project-outcomes">
+        <div class="outcome-item"><div class="outcome-num">2,200+</div><div class="outcome-desc">Active members in province-wide peer network</div></div>
+        <div class="outcome-item"><div class="outcome-num">3</div><div class="outcome-desc">Institutional partners — EPS, AFRA, Prospect Human Services</div></div>
+        <div class="outcome-item"><div class="outcome-num">4×</div><div class="outcome-desc">Gala scaled from 75 to 300 tickets sold in 4 weeks</div></div>
+        <div class="outcome-item"><div class="outcome-num">1</div><div class="outcome-desc">Crisis Communications Playbook — built for provincial replication</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section alt">
+    <div class="project-inner">
+      <div class="project-header">
+        <p class="project-category">Enterprise Coordination & Execution</p>
+        <h2 class="project-title">Essential Services Transition —<br>COVID-19 Business Continuity</h2>
+        <p class="project-framing">When provincial lockdowns were declared, Cashco Financial had 72 hours to migrate 60+ essential service locations to remote-only operations — without a service gap, without client panic, and without a communications playbook.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-block">
+          <p class="project-block-label">Stakeholder Environment</p>
+          <p>Executive team, 60+ branch managers across Alberta and BC, frontline staff navigating personal fear alongside operational change, and a vulnerable client base with limited digital access. Government directives arriving province by province, in real time.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Coordination Challenge</p>
+          <p>No remote service infrastructure. Low-digital-literacy client base requiring calm, plain-language guidance. Staff needing safety assurance and role clarity simultaneously. No communications templates — everything built under pressure.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Approach</p>
+          <p>Supported province-wide communications strategy — internal and external. Built client-facing updates translating government directives into plain language. Developed staff briefings addressing safety and continuity simultaneously. Coordinated rollout province by province as directives evolved.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Decision Points</p>
+          <p>Separated external calm from internal complexity — client communications simple and reassuring, internal briefings operationally detailed. Established daily leadership update cadence as guidance shifted, preventing fragmentation across 60+ locations.</p>
+        </div>
+      </div>
+      <div class="project-outcomes">
+        <div class="outcome-item"><div class="outcome-num">72h</div><div class="outcome-desc">Province-wide transition to remote-only operations</div></div>
+        <div class="outcome-item"><div class="outcome-num">60+</div><div class="outcome-desc">Locations coordinated across Alberta and BC</div></div>
+        <div class="outcome-item"><div class="outcome-num">Zero</div><div class="outcome-desc">Service gaps. Zero client incidents from communication failure.</div></div>
+        <div class="outcome-item"><div class="outcome-num">★</div><div class="outcome-desc">Best in class recognition for business continuity execution</div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="context-strip">
+  <div class="context-inner">
+    <div><p class="context-label">Positioning Note</p></div>
+    <p class="context-text">This dossier is structured for fractional, contract, and embedded operator engagements across nonprofit, public affairs, and mission-driven organizations. For a full marketing and brand portfolio, visit <a href="https://vbhatti1213.github.io" style="color: var(--gold); text-decoration: none; font-weight: 600;">vbhatti1213.github.io</a>. Available immediately. Edmonton, Alberta.</p>
+  </div>
+</div>
+
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+    <h2>Let's build something that works.</h2>
+    <p>Available immediately for fractional, contract, and embedded operator engagements in nonprofit, public affairs, and mission-driven organizations.</p>
+    <div class="contact-row">
+      <a class="contact-item" href="mailto:vaishally.bhatti@gmail.com"><span class="contact-dot"></span>vaishally.bhatti@gmail.com</a>
+      <a class="contact-item" href="tel:+17802226418"><span class="contact-dot"></span>780-222-6418</a>
+      <a class="contact-item" href="https://www.linkedin.com/in/vaishallyb/" target="_blank"><span class="contact-dot"></span>LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Vaishally Bhatti · Strategic Operations Dossier</span>
+  <span>Edmonton, AB · Available immediately</span>
+</footer>
+
+</body>
+</html>
