@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategic Operations Dossier — Vaishally Bhatti</title>
+<meta name="description" content="Fractional operator portfolio — Vaishally Bhatti. Insights, brand, GTM, and communications systems for complex organizations.">
+<meta property="og:title" content="Vaishally Bhatti — Fractional Operator">
+<meta property="og:description" content="I take on work that stalls between strategy and execution — and I ship it.">
+<meta property="og:url" content="https://vbhatti1213.github.io/strategicdossier">
+<meta property="og:image" content="https://vbhatti1213.github.io/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Vaishally Bhatti">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F8F6F2;
+    --ink: #1B2A3B;
+    --gold: #B8892A;
+    --gold-soft: #F5EDD8;
+    --slate: #243447;
+    --border: rgba(27,42,59,0.12);
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); background: var(--cream); color: #2A2A2A; line-height: 1.7; font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+  /* NAV */
+  nav { background: var(--ink); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  .nav-name { font-family: var(--serif); font-size: 1rem; color: #F8F6F2; white-space: nowrap; }
+  .nav-links { display: flex; gap: 1.25rem; list-style: none; flex-shrink: 0; }
+  .nav-links a { font-size: 0.75rem; font-weight: 500; color: rgba(248,246,242,0.55); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; white-space: nowrap; }
+  .nav-links a:hover { color: #F8F6F2; }
+
+  /* HERO */
+  .hero { background: var(--ink); padding: 5rem 2rem 4rem; border-bottom: 3px solid var(--gold); }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .hero-eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; letter-spacing: -0.02em; color: #F8F6F2; margin-bottom: 1.5rem; max-width: 720px; }
+  .hero h1 em { font-style: italic; color: #C8A86A; }
+  .hero-sub { font-size: 1rem; color: rgba(248,246,242,0.7); max-width: 620px; line-height: 1.8; margin-bottom: 2.5rem; }
+  .hero-proof { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3rem; }
+  .proof-pill { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; color: var(--ink); background: var(--gold); padding: 0.3rem 0.875rem; border-radius: 2px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2rem; border-top: 1px solid rgba(248,246,242,0.1); padding-top: 2.5rem; }
+  .stat-num { font-family: var(--serif); font-size: 1.9rem; color: #F8F6F2; line-height: 1; margin-bottom: 0.3rem; }
+  .stat-label { font-size: 0.75rem; color: rgba(248,246,242,0.45); font-weight: 500; line-height: 1.4; }
+
+  /* SECTIONS */
+  .section { max-width: 860px; margin: 0 auto; padding: 4rem 2rem; }
+  .section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #888; margin-bottom: 0.75rem; }
+  .section-title { font-family: var(--serif); font-size: 1.6rem; color: #1A1A1A; margin-bottom: 2.5rem; letter-spacing: -0.01em; }
+
+  /* TILES */
+  .tiles { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+  .tile { background: #fff; border: 1px solid var(--border); border-radius: 3px; padding: 2rem; transition: box-shadow 0.2s; }
+  .tile:hover { box-shadow: 0 6px 24px rgba(27,42,59,0.08); }
+  .tile-num { font-family: var(--serif); font-size: 3rem; color: var(--gold); opacity: 0.25; line-height: 1; margin-bottom: 1rem; }
+  .tile-category { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .tile-title { font-family: var(--serif); font-size: 1.15rem; color: #1A1A1A; line-height: 1.3; margin-bottom: 0.75rem; }
+  .tile-frame { font-size: 0.9rem; color: #444; line-height: 1.75; margin-bottom: 1.25rem; font-style: italic; border-left: 2px solid var(--gold); padding-left: 0.875rem; }
+  .tile-outcomes { display: flex; flex-direction: column; gap: 0.5rem; }
+  .tile-outcome { font-size: 0.88rem; color: #444; display: flex; align-items: flex-start; gap: 0.5rem; line-height: 1.55; }
+  .tile-outcome::before { content: '→'; color: var(--gold); font-weight: 600; flex-shrink: 0; margin-top: 1px; }
+
+  /* CALLOUT */
+  .callout-strip { background: var(--slate); padding: 2.5rem 2rem; }
+  .callout-inner { max-width: 860px; margin: 0 auto; }
+  .callout-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .callout-text { font-size: 0.95rem; color: rgba(248,246,242,0.8); line-height: 1.75; max-width: 680px; margin-bottom: 1.5rem; }
+  .callout-services { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .service-tag { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; color: var(--ink); background: var(--gold); padding: 0.3rem 0.8rem; border-radius: 2px; }
+
+  /* CTA */
+  .cta-strip { background: var(--ink); padding: 2rem; }
+  .cta-inner { max-width: 860px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .cta-text { font-size: 0.95rem; color: rgba(248,246,242,0.7); font-style: italic; }
+  .cta-btn { display: inline-block; background: #D9634A; color: #fff; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.75rem 1.5rem; border-radius: 2px; text-decoration: none; white-space: nowrap; }
+  .cta-btn:hover { background: #C4563E; }
+
+  /* PROJECTS */
+  .project-section { background: #fff; border-top: 1px solid var(--border); padding: 4rem 2rem; }
+  .project-section.alt { background: var(--cream); }
+  .project-inner { max-width: 860px; margin: 0 auto; }
+  .project-header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+  .project-category { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .project-title { font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2.2rem); color: #1A1A1A; line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 1rem; }
+  .project-framing { font-size: 1rem; color: #444; line-height: 1.75; max-width: 680px; font-style: italic; }
+  .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+  .project-block { background: var(--cream); border: 1px solid var(--border); border-radius: 3px; padding: 1.5rem; }
+  .project-block-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .project-block p { font-size: 0.92rem; color: #444; line-height: 1.75; }
+  .project-block p em { color: #1A1A1A; font-style: italic; }
+  .project-outcomes { background: var(--ink); border-radius: 3px; padding: 1.75rem 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; }
+  .outcome-num { font-family: var(--serif); font-size: 1.6rem; color: #F8F6F2; line-height: 1; margin-bottom: 0.3rem; }
+  .outcome-desc { font-size: 0.8rem; color: rgba(248,246,242,0.6); line-height: 1.6; font-weight: 500; }
+
+  /* CONTACT */
+  .contact-section { background: var(--ink); padding: 3.5rem 2rem; text-align: center; }
+  .contact-inner { max-width: 560px; margin: 0 auto; }
+  .contact-section h2 { font-family: var(--serif); font-size: 1.75rem; color: #F8F6F2; margin-bottom: 0.75rem; font-style: italic; }
+  .contact-section p { font-size: 0.88rem; color: rgba(248,246,242,0.5); margin-bottom: 2rem; line-height: 1.7; }
+  .contact-row { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+  .contact-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: #F8F6F2; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .contact-item:hover { color: var(--gold); }
+  .contact-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+  footer { max-width: 860px; margin: 0 auto; padding: 1.5rem 2rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: #888; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+
+  @media (max-width: 760px) {
+    .tiles { grid-template-columns: 1fr; }
+    .project-grid { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .hero { padding: 2.5rem 1.25rem 2rem; }
+    .section { padding: 2.5rem 1.25rem; }
+    .project-section { padding: 2.5rem 1.25rem; }
+    .tile { padding: 1.5rem; }
+    .tile-frame { font-size: 0.95rem; }
+    .tile-outcome { font-size: 0.92rem; }
+    .project-block p { font-size: 0.95rem; }
+    .callout-text { font-size: 1rem; }
+    .contact-row { flex-direction: column; align-items: center; gap: 1rem; }
+    .cta-inner { flex-direction: column; text-align: center; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">Vaishally Bhatti</div>
+  <ul class="nav-links">
+    <li><a href="#capabilities">Capabilities</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Fractional Operator · Insights · Brand · GTM · Communications Systems</p>
+    <h1>I take on work that stalls between <em>strategy and execution</em> — and I ship it.</h1>
+    <p class="hero-sub">12 years at Tim Hortons corporate. 8 years in financial services. I lead client insights and strategy, manage cross-functional delivery, and build systems that outlast my engagement. Most fractional operators execute what you hand them. I find what you're missing — and ship it.</p>
+    <div class="hero-proof">
+      <span class="proof-pill">150K+ clients served</span>
+      <span class="proof-pill">Insight-led pricing &amp; GTM</span>
+      <span class="proof-pill">48-hour rapid deployment</span>
+      <span class="proof-pill">Comms systems that scale</span>
+      <span class="proof-pill">Start-ups · QSR · Nonprofit</span>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">$10B</div><div class="stat-label">Brand foundation — Tim Hortons corporate</div></div>
+      <div><div class="stat-num">15+</div><div class="stat-label">Years cross-sector operations</div></div>
+      <div><div class="stat-num">150K+</div><div class="stat-label">Clients served across complex service systems</div></div>
+      <div><div class="stat-num">60+</div><div class="stat-label">Locations coordinated in 72-hr transition</div></div>
+      <div><div class="stat-num">$40M</div><div class="stat-label">Program-driven loan book built</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="capabilities">
+  <p class="section-label">Core Capabilities</p>
+  <h2 class="section-title">Fast. Structured. Built to last.</h2>
+  <div class="tiles">
+
+    <div class="tile">
+      <div class="tile-num">01</div>
+      <div class="tile-category">Rapid Deployment &amp; Fractional Operations</div>
+      <div class="tile-title">48-Hour Operator</div>
+      <div class="tile-frame">I jump into the messy. Within 48 hours I can assess what's broken, identify what's missing, and move. No ramp time. No hand-holding.</div>
+      <div class="tile-outcomes">
+        <div class="tile-outcome"><span>Reimagine product and service offerings</span> <span style="color:#888;font-style:italic;font-size:0.83rem;">— 2× award recognition for unconventional thinking in an underserved marketplace</span></div>
+        <div class="tile-outcome"><span>Do a double take on pricing strategy</span> <span style="color:#888;font-style:italic;font-size:0.83rem;">— 150% pricing uplift identified on Tax product, 24 hours before launch</span></div>
+        <div class="tile-outcome"><span>Inject a successful remote leader</span> <span style="color:#888;font-style:italic;font-size:0.83rem;">— transitioned 150+ frontline staff across 60+ locations within 72 hours during COVID-19</span></div>
+        <div class="tile-outcome"><span>Ensure balanced project leadership</span> <span style="color:#888;font-style:italic;font-size:0.83rem;">— selected to build rapid deployment of challenger brand, mobile-first, client-first Fintech app</span></div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile-num">02</div>
+      <div class="tile-category">Insight-Led Growth &amp; Pricing Strategy</div>
+      <div class="tile-title">Research, Pricing &amp; GTM</div>
+      <div class="tile-frame">I diagnose broken communications infrastructure and build unified systems across multi-stakeholder environments — executive voice to frontline execution. I build it so you don't need me.</div>
+      <div class="tile-outcomes">
+        <div class="tile-outcome">Jumped in, reviewed everything in motion, delivered channel mapping, copy banks, and directional guides for all stakeholders — in under 4 weeks</div>
+        <div class="tile-outcome">Narrative repositioning across 150K+ client base during $50M capital raise</div>
+        <div class="tile-outcome">Always-on communications engine replacing reactive, disjointed activity</div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile-num">03</div>
+      <div class="tile-category">Insight-Led Growth &amp; Pricing Strategy</div>
+      <div class="tile-title">Research, Pricing &amp; GTM</div>
+      <div class="tile-frame">Customer insight before any initiative. Van Westendorp pricing analysis, behavioral segmentation, VOC research — translated into positioning, pricing, and go-to-market decisions that compound.</div>
+      <div class="tile-outcomes">
+        <div class="tile-outcome">150% pricing uplift identified via Van Westendorp analysis</div>
+        <div class="tile-outcome">7-persona behavioral segmentation framework — improve decision-making</div>
+        <div class="tile-outcome">0 to 4,000 Village Members — subscription-based business model built as an on-ramp into financial inclusion</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="callout-strip">
+  <div class="callout-inner">
+    <div class="callout-label">How I engage</div>
+    <div class="callout-text">I work fractionally, on contract, or as an embedded operator. Give me 48 hours and I can assess what's stalling, align the right people, and move. I manage budgets, timelines, and expectations across complex stakeholder environments — without needing a perfect brief to start.</div>
+    <div class="callout-services">
+      <span class="service-tag">Project Management</span>
+      <span class="service-tag">Brand Consulting</span>
+      <span class="service-tag">Product Marketing</span>
+      <span class="service-tag">Pricing Strategy</span>
+      <span class="service-tag">Research &amp; Insights</span>
+      <span class="service-tag">Marketing Strategy</span>
+      <span class="service-tag">Copywriting</span>
+      <span class="service-tag">GTM Execution</span>
+    </div>
+  </div>
+</div>
+
+<div class="cta-strip">
+  <div class="cta-inner">
+    <p class="cta-text">You should have enough to know if we're a fit. If you do — let's talk.</p>
+    <a href="mailto:vaishally.bhatti@gmail.com" class="cta-btn">Get in touch →</a>
+  </div>
+</div>
+
+<div id="work">
+
+  <div class="project-section">
+    <div class="project-inner">
+      <div class="project-header">
+        <p class="project-category">Service System Communication Design</p>
+        <h2 class="project-title">Building the Revenue Engine —<br>Not-for-Profit, Alberta Chapter</h2>
+        <p class="project-framing">Communications activity without a communications system. Multiple teams, no unified strategy — effort spent, revenue not compounding.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-block">
+          <p class="project-block-label">Stakeholder Environment</p>
+          <p>Fundraising leadership, program staff, group managers, and agency teams — parallel teams, no unified voice or channel strategy.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">System Diagnosis</p>
+          <p>No self-serve copy infrastructure. No channel differentiation. No always-on engine between campaigns. Disjointed comms producing energy, not synergy. Leading to diluted brand presence and slow-to-move CTAs.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Approach</p>
+          <p>Jumped into discovery, reviewed everything in motion, drafted competitive benchmarking, built channel mapping, copy banks, and directional guides for all stakeholders — in under 4 weeks. Optimized all channels, messaging, and CTAs to work toward strategic priority with visual direction.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Decision Points</p>
+          <p>Introduced A/B testing to pull the brand toward younger and culturally diverse audiences — winning tone fed back into always-on strategy. Competitive benchmarking sharpened category positioning against closest sector peers. Served the team with collaborative, informed thinking — allowing for quick iterations as new decision points emerged.</p>
+        </div>
+      </div>
+      <div class="project-outcomes">
+        <div class="outcome-item"><div class="outcome-num">1</div><div class="outcome-desc">Unified Communications Layer — one owner, one voice, one direction</div></div>
+        <div class="outcome-item"><div class="outcome-num">5</div><div class="outcome-desc">Channels optimized by tone and audience behaviour</div></div>
+        <div class="outcome-item"><div class="outcome-num">6</div><div class="outcome-desc">Fundraising journey stages defined and built — awareness to gratitude</div></div>
+        <div class="outcome-item"><div class="outcome-num">4</div><div class="outcome-desc">Anchor points identified — giving depth and longevity to the comms plan</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section alt">
+    <div class="project-inner">
+      <div class="project-header">
+        <p class="project-category">Brand Repositioning · Crisis Execution · Thought Leadership</p>
+        <h2 class="project-title">3 Stages. One Organization —<br>Cashco Financial</h2>
+        <p class="project-framing">Over 8 years, 3 distinct challenges — each requiring a different kind of leadership. A brand repositioning that changed how an industry talked about itself. A crisis that demanded empathy at scale. And a thought leadership moment that shaped investor confidence during a $50M capital raise.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-block">
+          <p class="project-block-label">Stage 1 — Brand Repositioning</p>
+          <p>Transformed Cashco from transactional lender to purpose-led ally. Built narrative architecture anchored in <em>End Financial Exclusion</em> — with frontline empathy framework and financial literacy programs. Every touchpoint aligned to the same brand promise.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Stage 2 — COVID Business Continuity</p>
+          <p>When lockdowns hit, migrated 60+ essential service locations to remote-only operations in 72 hours. Introduced $100 guaranteed loan access — a deliberate empathy signal during peak client uncertainty. Separated external calm from internal operational complexity. Zero service gaps. Zero client incidents.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Stage 3 — Thought Leadership</p>
+          <p>During Cashco's $50M capital raise, authored the Pathway Report — positioning the organization as a trusted voice in alternative lending. Translated 150K+ client behavioural data into a national conversation about financial exclusion. Built credibility with investors, media, and sector peers simultaneously.</p>
+        </div>
+        <div class="project-block">
+          <p class="project-block-label">Stakeholder Environment</p>
+          <p>60+ branches across 4 provinces. Frontline staff, executive team, board, investors, and 150K+ clients — many newcomers and underserved individuals with limited digital access. Each stage required different communication registers for different audiences, simultaneously.</p>
+        </div>
+      </div>
+      <div class="project-outcomes">
+        <div class="outcome-item"><div class="outcome-num">90%+</div><div class="outcome-desc">Client sentiment scores post-repositioning</div></div>
+        <div class="outcome-item"><div class="outcome-num">$40M</div><div class="outcome-desc">Loan book built during tenure</div></div>
+        <div class="outcome-item"><div class="outcome-num">72h</div><div class="outcome-desc">Province-wide transition to remote-only operations</div></div>
+        <div class="outcome-item"><div class="outcome-num">$100</div><div class="outcome-desc">Guaranteed loan — empathy delivered at scale during COVID</div></div>
+        <div class="outcome-item"><div class="outcome-num">★★★★</div><div class="outcome-desc">Best in class recognition — Penguin Awards for innovation</div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+    <h2>Let's build something that works.</h2>
+    <p>Available immediately for fractional, contract, and embedded operator engagements in nonprofit, public affairs, and mission-driven organizations.</p>
+    <div class="contact-row">
+      <a class="contact-item" href="mailto:vaishally.bhatti@gmail.com"><span class="contact-dot"></span>vaishally.bhatti@gmail.com</a>
+      <a class="contact-item" href="tel:+17802226418"><span class="contact-dot"></span>780-222-6418</a>
+      <a class="contact-item" href="https://www.linkedin.com/in/vaishallyb/" target="_blank"><span class="contact-dot"></span>LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Vaishally Bhatti · Strategic Operations Dossier</span>
+  <span>Edmonton, AB · Available immediately</span>
+</footer>
+
+</body>
+</html>
